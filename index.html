@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="w-2/4 mx-auto bg-slate-300 p-2 drop-shadow-xl mt-3">
+      <h1 class="text-sky-700 font-bold text-5xl text-center my-3">
+        Money Master💰
+      </h1>
+
+      <section>
+        <div class="text-center">
+          <h2 class="font-semibold text-2xl my-3">Income</h2>
+          <label class="font-medium" for="incomeField">Income :</label>
+          <input type="text" name="" id="incomeField" />
+        </div>
+
+        <div class="text-center">
+          <h2 class="font-semibold text-2xl my-3">Expenses</h2>
+          <div class="block mb-2">
+            <label class="font-medium" for="foodField">Food :</label>
+            <input type="text" name="" id="foodField" />
+          </div>
+          <div class="block mb-2">
+            <label class="font-medium" for="rentField">Rent :</label>
+            <input type="text" name="" id="rentField" />
+          </div>
+          <div class="block mb-2">
+            <label class="font-medium" for="clothesField">Clothes :</label>
+            <input type="text" name="" id="clothesField" />
+          </div>
+        </div>
+        <div>
+          <button
+            id="btnCalculate"
+            class="bg-sky-500 text-white font-semibold mx-auto block px-4 py-1 my-4"
+          >
+            Calculate
+          </button>
+          <p class="mb-2 text-xl text-center font-semibold">
+            Total Expenses: <span id="totalExpenses">00</span>
+          </p>
+          <p class="text-center font-medium text-xl">Balance: <span id="afterBalance">00</span></p>
+        </div>
+        <div class="text-center mt-5">
+            <label class="font-semibold" for="saveField">Save :</label>
+            <input class="w-20 mx-2 text-center" type="text" name="" id="saveField">
+            <span>%</span>
+            <button id="btn-save" class="bg-sky-500 text-white font-semibold px-4 py-1 my-4 mx-2">Save</button>
+
+            <p class="mb-2 text-xl text-center font-semibold">Saving Amount: <span id="savingAmount">00</span> </p>
+
+            <p class="mb-2 text-xl text-center font-semibold">Remaining Balance: <span id="remainingBalance">00</span> </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- JavaScript here -->
+    <script src="javaScript/index.js"></script>
+  </body>
+</html>
